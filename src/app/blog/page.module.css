@@ -3,20 +3,32 @@
     align-items: center;
     gap: 50px;
     margin-bottom: 50px;
-  }
-  
-  .image{
-    object-fit: cover;
-  }
-  
-  .content {
-  }
-  
-  .title{
+}
+
+.image {
+    object-fit: scale-down;
+}
+
+@media (max-width: 900px) {
+    .content {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .image {
+        width: 100%;
+    }
+}
+
+.title {
     margin-bottom: 10px;
-  }
-  
-  .desc{
+}
+
+.desc {
     font-size: 18px;
     color: #999;
-  }
+}
