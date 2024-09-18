@@ -1,43 +1,48 @@
 .container {
     display: flex;
     gap: 100px;
-  }
-  
-  .posts {
+}
+@media (max-width: 1000px) {
+    .container {
+        flex-direction: column-reverse;
+    }
+}
+
+.posts {
     flex: 1;
-  }
-  
-  .post {
+}
+
+.post {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin: 50px 0px;
-  }
-  
-  .imgContainer {
+}
+
+.imgContainer {
     width: 200px;
     height: 100px;
     position: Ū;
-  }
-  
-  .img {
+}
+
+.img {
     object-fit: cover;
-  }
-  
-  .delete {
+}
+
+.delete {
     cursor: pointer;
     color: red;
-  }
-  
-  .new {
+}
+
+.new {
     flex: 1;
     display: flex;
     flex-direction: column;
     gap: 20px;
-  }
-  
-  .input,
-  .textArea {
+}
+
+.input,
+.textArea {
     padding: 10px;
     background-color: transparent;
     border: 2px solid #bbb;
@@ -45,9 +50,9 @@
     color: #bbb;
     font-size: 20px;
     font-weight: bold;
-  }
-  
-  .button {
+}
+
+.button {
     padding: 20px;
     cursor: pointer;
     background-color: #53c28b;
@@ -55,4 +60,4 @@
     border-radius: 5px;
     color: #eee;
     font-weight: bold;
-  }
+}

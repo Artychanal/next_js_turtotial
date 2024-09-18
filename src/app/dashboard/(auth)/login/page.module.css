@@ -3,26 +3,27 @@
     align-items: center;
     flex-direction: column;
     gap: 20px;
-  }
-  
-  .title{
+}
+
+.title {
     color: #bbb;
-  }
-  
-  .subtitle{
+}
+
+.subtitle {
     font-size: 20px;
     margin-bottom: 30px;
+    text-align: center;
     color: #bbb;
-  }
-  
-  .form {
+}
+
+.form {
     width: 300px;
     display: flex;
     flex-direction: column;
     gap: 20px;
-  }
-  
-  .input {
+}
+
+.input {
     padding: 20px;
     background-color: transparent;
     border: 2px solid #bbb;
@@ -31,9 +32,9 @@
     color: #bbb;
     font-size: 20px;
     font-weight: bold;
-  }
-  
-  .button {
+}
+
+.button {
     width: 300px;
     padding: 20px;
     cursor: pointer;
@@ -42,29 +43,29 @@
     border-radius: 5px;
     color: #eee;
     font-weight: bold;
-  }
-  
-  .button:hover {
+}
+
+.button:hover {
     background-color: #49b07d;
-  }
-  
-  .or {
+}
+
+.or {
     color: #bbb;
-  }
-  
-  .link {
+}
+
+.link {
     text-decoration: underline;
     color: #7d7c7c;
-  }
-  
-  .link:hover {
+}
+
+.link:hover {
     color: rgb(61, 61, 61);
-  }
-  
-  .google {
+}
+
+.google {
     background-color: rgba(228, 97, 50, 0.72);
-  }
-  
-  .google:hover {
+}
+
+.google:hover {
     background-color: rgba(228, 97, 50, 0.803);
-  }
+}
