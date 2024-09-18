@@ -1,5 +1,8 @@
-import React from 'react';
-import BlogContent from './content';
+// Blog.jsx (Серверный компонент)
+import styles from './page.module.css';
+import Link from 'next/link';
+import Image from 'next/image';
+import BlogContent from './content.jsx'; // Клиентский компонент
 
 async function getData() {
     const res = await fetch('http://localhost:3000/api/posts', {
@@ -15,7 +18,10 @@ async function getData() {
 
 const Blog = async () => {
     const data = await getData();
-    return <BlogContent data={data} />;
+
+    return (
+        <BlogContent data={data} />
+    );
 };
 
 export default Blog;
