@@ -8,7 +8,6 @@ import Image from 'next/image';
 import useWindowWidth from '@/components/useWindowWidth';
 
 const BlogContent = ({ data }) => {
-    const windowWidth = useWindowWidth();
 
     return (
         <div className={styles.mainContainer}>

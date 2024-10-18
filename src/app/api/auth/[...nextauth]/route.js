@@ -12,7 +12,6 @@ import bcrypt from "bcryptjs";
       id: "credentials",
       name: "Credentials",
       async authorize(credentials) {
-        //Check if the user exists.
         await connect();
 
         try {
@@ -40,8 +39,8 @@ import bcrypt from "bcryptjs";
       },
     }),
     GoogleProvider({
-        clientId: process.env.GOOGLE_CLIENT_ID,
-        clientSecret: process.env.GOOGLE_CLIENT_SECRET,
+        clientId: process.env.GOOGLE_CLIENT_ID, // вставити з .env
+        clientSecret: process.env.GOOGLE_CLIENT_SECRET, // вставити з .env
     }),
   ],
   pages: {
